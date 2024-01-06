@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Productivity Enabler",
+    "version": "0.2",
+    "description": "Enable your true ability to become 1000% more productive, by blocking websites that can and most definitely will distract you from reaching your dreams!",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["Scripts/Content.js"]
+      }
+    ],
+    "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
+    "browser_action": {
+      "default_popup": "html/Popup.html",
+      "default_title": "Productivity Enabler"
+    },
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "storage",
+      "https://www.youtube.com/*",
+      "https://www.facebook.com/*",
+      "https://www.netflix.com/*",
+      "https://www.twitch.com/*",
+      "https://www.hulu.com/*",
+      "https://www.roblox.com/*",
+      "https://www.tiktok.com/*",
+      "https://www.instagram.com/*"
+    ]
+  }
